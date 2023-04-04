@@ -6,18 +6,18 @@ const Postprovider = (props) => {
   const [post, setpost] = useState({label:"", photo_url:""})
   const [id, setid] = useState("");
   const fetchdata = () => {
-    axios.get("http://localhost:5000/gallery").then((res) => {
+    axios.get("https://dreamgallery.onrender.com/gallery").then((res) => {
       setdata(res.data.postdata.reverse());
     });
   };
   fetchdata();
   function Deletepost(){
-    axios.delete(`http://localhost:5000/gallery/${id}`).then((res)=>{
+    axios.delete(`https://dreamgallery.onrender.com/${id}`).then((res)=>{
        fetchdata()
     })
  }  
 function postdata(){
-    axios.post("http://localhost:5000/gallery", post).then((res)=>{
+    axios.post("https://dreamgallery.onrender.com/gallery", post).then((res)=>{
         fetchdata()
     })
 }
