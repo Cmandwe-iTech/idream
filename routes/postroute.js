@@ -21,7 +21,7 @@ post_route.post("/gallery", async (req, res) => {
 
 post_route.get("/gallery", async (req, res) => {
   try {
-    const postdata = await PostModel.find();
+    const postdata = await PostModel.find().sort({ Date: -1 });
     res.status(200).json({
       status: "ok",
       postdata,
