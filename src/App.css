@@ -1,0 +1,169 @@
+.post-container {
+  height: 100vh;
+  width: 100vw;
+}
+.header {
+  height: 10%;
+  width: 100%;
+  background: lightskyblue;
+  box-sizing: border-box;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.post-gallery {
+  height: 90%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background: lightblue;
+  position: relative;
+  top: 0%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.opacity {
+  height: 90%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background: lightblue;
+  position: relative;
+  top: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 0.5;
+}
+.data-flex {
+  height: 40%;
+  width: 20%;
+  position: relative;
+  margin: 10px;
+  border-radius: 20px;
+}
+.data-flex:hover p {
+  z-index: 100;
+}
+.data-flex:hover button {
+  z-index: 100;
+}
+.data-flex img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  border-radius: 20px;
+}
+.data-flex p {
+  height: 20%;
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  color: rgb(222, 228, 230);
+  font-size: 25px;
+}
+.data-flex button {
+  padding: 5px;
+  position: absolute;
+  top: 10%;
+  left: 60%;
+}
+.header input {
+  height: 50%;
+  width: 40%;
+  border-radius: 10px;
+}
+.header button {
+  height: 60%;
+  width: 10%;
+}
+.dltbtn {
+  height: 15%;
+  width: 25%;
+  border: 2px solid red;
+  color: white;
+  background-color: transparent;
+  border-radius: 5px;
+}
+.add-photo {
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  background: white;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  z-index: 100;
+}
+.display {
+  height: 50%;
+  width: 40%;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  background: white;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  z-index: 0;
+}
+.inputphoto {
+  height: 12%;
+  width: 99%;
+  border-radius: 5px;
+  margin-bottom: 2%;
+}
+.float {
+  text-align: right;
+}
+.float button {
+  margin: 10px;
+}
+#cncl {
+  background: transparent;
+  border-radius: 5px;
+}
+#sbmt {
+  background: green;
+  border-radius: 5px;
+}
+.div1 {
+  height: 20%;
+  width: 20%;
+  background: white;
+  border-radius: 10px;
+  z-index: 100;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.div2 {
+  height: 20%;
+  width: 20%;
+  background: white;
+  border-radius: 10px;
+  z-index: 0;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  box-sizing: border-box;
+  padding: 20px;
+  visibility: hidden;
+}
+#cncls{
+  background: transparent;
+  border-radius: 5px;
+}
+#dlt{
+  background: red;
+  color: white;
+  border-radius: 5px;
+}
+#in{
+  border-radius: 5px;
+}
