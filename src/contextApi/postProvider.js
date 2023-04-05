@@ -12,7 +12,8 @@ const Postprovider = (props) => {
   };
   fetchdata();
   function Deletepost(){
-    axios.delete(`https://dreamgallery.onrender.com/${id}`).then((res)=>{
+    axios.delete(`https://dreamgallery.onrender.com/gallery/${id}`).then((res)=>{
+      console.log("ok");
        fetchdata()
     })
  }  
