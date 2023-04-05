@@ -11,14 +11,14 @@ const Postprovider = (props) => {
     });
   };
   fetchdata();
- async function Deletepost(){
-   await axios.delete(`https://dreamgallery.onrender.com/gallery/${id}`).then((res)=>{
+ function Deletepost(){
+    axios.delete(`https://dreamgallery.onrender.com/gallery/${id}`).then((res)=>{
       console.log("ok");
        fetchdata()
     })
  }  
-async function postdata(){
-   await axios.post("https://dreamgallery.onrender.com/gallery", post).then((res)=>{
+ function postdata(){
+   axios.post("https://dreamgallery.onrender.com/gallery", post).then((res)=>{
         fetchdata()
         setpost({label:"",photo_url:""})
     })
