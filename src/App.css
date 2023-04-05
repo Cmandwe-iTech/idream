@@ -5,7 +5,7 @@
 .header {
   height: 10%;
   width: 100%;
-  background: lightskyblue;
+  /* background: lightskyblue; */
   box-sizing: border-box;
   padding-top: 10px;
   display: flex;
@@ -16,7 +16,7 @@
   width: 100%;
   box-sizing: border-box;
   padding: 20px;
-  background: lightblue;
+  /* background: lightblue; */
   position: relative;
   top: 0%;
   display: flex;
@@ -27,7 +27,7 @@
   width: 100%;
   box-sizing: border-box;
   padding: 20px;
-  background: lightblue;
+  /* background: lightblue; */
   position: relative;
   top: 0%;
   display: flex;
@@ -110,6 +110,7 @@
   box-sizing: border-box;
   padding: 20px;
   z-index: 0;
+  visibility: hidden;
 }
 .inputphoto {
   height: 12%;
