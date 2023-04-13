@@ -94,7 +94,7 @@ function App() {
       <div className={!btn ? "post-gallery" : "opacity"}>
         {fd.map((item, i) => {
           return (
-            <div key={i} className="data-flex">
+            <div key={i} className={!btns?"data-flex":"data"}>
               <p>{item.label}</p>
               <button
                 onClick={() => {

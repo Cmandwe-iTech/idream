@@ -143,6 +143,8 @@
   left: 25%;
   box-sizing: border-box;
   padding: 20px;
+  overflow: auto;
+  transition: opacity 0.25s, scale 0.25s;
 }
 .div2 {
   height: 20%;
@@ -168,4 +170,40 @@
 }
 #in{
   border-radius: 5px;
+}
+.data{
+  height: 40%;
+  width: 20%;
+  position: relative;
+  margin: 10px;
+  border-radius: 20px;
+}
+.data:hover p {
+  z-index: 100;
+}
+.data:hover button {
+  z-index: 100;
+}
+.data img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  border-radius: 20px;
+  opacity: 0.5;
+}
+.data p {
+  height: 20%;
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  color: rgb(222, 228, 230);
+  font-size: 25px;
+}
+.data button {
+  padding: 5px;
+  position: absolute;
+  top: 10%;
+  left: 60%;
 }
