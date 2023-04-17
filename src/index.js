@@ -3,17 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Postprovider from './contextApi/postProvider';
 import{BrowserRouter,Routes,Route} from "react-router-dom"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   
   <BrowserRouter>
-  <Postprovider>
+  
     <Routes>
       <Route path="/" element={<App />}/>
     </Routes>
-  </Postprovider>
+
   </BrowserRouter>
 );
 

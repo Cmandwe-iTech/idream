@@ -1,13 +1,33 @@
 import "./App.css";
-import React, { useContext, useEffect, useState } from "react";
-import { PostContext } from "./contextApi/postcontext";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 function App() {
-  const { data, Deletepost, post, setpost, postdata, setid } =
-    useContext(PostContext);
+  const [data, setdata] = useState([]);
+  const [post, setpost] = useState({ label: "", photo_url: "" });
   const [text, settext] = useState("");
   const [fd, setfd] = useState([]);
   const [btn, setbtn] = useState(false);
   const [btns, setbtns] = useState(false);
+  const [id, setid] = useState("");
+  function Deletepost() {
+    axios
+      .delete(`https://dreamgallery.onrender.com/gallery/${id}`)
+      .then((res) => {
+        console.log("ok");
+      });
+  }
+  function postdata() {
+    axios
+      .post("https://dreamgallery.onrender.com/gallery", post)
+      .then((res) => {
+        setdata(res.data.postdata.reverse());
+      });
+  }
+  useEffect(() => {
+    axios.get("https://dreamgallery.onrender.com/gallery").then((res) => {
+      setdata(res.data.postdata.reverse());
+    });
+  }, [data]);
   useEffect(() => {
     if (text === "") {
       setfd(data);
